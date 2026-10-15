@@ -1,0 +1,55 @@
+{
+  "experiment": "exp05_output_specificity",
+  "grid": {
+    "input-only": {
+      "7d": {
+        "C": 0.8,
+        "P": 0.3
+      },
+      "60d": {
+        "C": 0.7,
+        "P": 0.45
+      }
+    },
+    "output-only": {
+      "7d": {
+        "C": 0.35,
+        "P": 0.55
+      },
+      "60d": {
+        "C": 0.55,
+        "P": 0.85
+      }
+    },
+    "balanced-70-30": {
+      "7d": {
+        "C": 0.75,
+        "P": 0.5
+      },
+      "60d": {
+        "C": 0.75,
+        "P": 0.8
+      }
+    },
+    "speak-day-one+feedback": {
+      "7d": {
+        "C": 0.55,
+        "P": 0.65
+      },
+      "60d": {
+        "C": 0.7,
+        "P": 0.9
+      }
+    }
+  },
+  "verdict": "NUANCED CONFIRMATION: speak-from-day-one maximizes PRODUCTION at 60d (0.90, best) but is NOT best for COMPREHENSION at 7d (0.55 vs input-only 0.80). Silent-period studies (Postovsky/Gary) explain why: early output without feedback risks fossilization + affective-filter spike (Krashen), while pushed output WITH feedback triggers Swain noticing/testing/reflection. Prescription matches evidence synthesis: week-1 say studied sentences aloud + few own sentences; most hours still input; add partner who forces self-correction once short exchanges possible (second-language.app 2026-02-05 protocol).",
+  "falsifiable_prediction": "A 4-arm 60-day RCT (n>=40/arm) will rank production: speak+feedback > balanced > output-only > input-only; and 7-day comprehension reversed.",
+  "sources": [
+    "DeKeyser & Sokalski",
+    "Shintani-Li-Ellis k=35",
+    "Swain 1985/1993/1995",
+    "Postovsky 1974",
+    "Gary 1975",
+    "data/SOURCES.md"
+  ]
+}

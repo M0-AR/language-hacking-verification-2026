@@ -1,0 +1,80 @@
+{
+  "experiment": "exp04_cognate_overlap",
+  "n_sample": 32,
+  "fr_cognate_like_rate": 0.81,
+  "es_cognate_like_rate": 0.66,
+  "examples": [
+    {
+      "en": "action",
+      "fr": "action",
+      "fr_sim": 1.0,
+      "es": "acción",
+      "es_sim": 0.67,
+      "pattern": "-tion/-ción/-zione/-ção"
+    },
+    {
+      "en": "nation",
+      "fr": "nation",
+      "fr_sim": 1.0,
+      "es": "nación",
+      "es_sim": 0.67,
+      "pattern": "-tion family"
+    },
+    {
+      "en": "precipitation",
+      "fr": "précipitation",
+      "fr_sim": 0.92,
+      "es": "precipitación",
+      "es_sim": 0.85,
+      "pattern": "-tion family"
+    },
+    {
+      "en": "solution",
+      "fr": "solution",
+      "fr_sim": 1.0,
+      "es": "solución",
+      "es_sim": 0.75,
+      "pattern": "-tion family"
+    },
+    {
+      "en": "frustration",
+      "fr": "frustration",
+      "fr_sim": 1.0,
+      "es": "frustración",
+      "es_sim": 0.82,
+      "pattern": "-tion family"
+    },
+    {
+      "en": "tradition",
+      "fr": "tradition",
+      "fr_sim": 1.0,
+      "es": "tradición",
+      "es_sim": 0.78,
+      "pattern": "-tion family"
+    },
+    {
+      "en": "communication",
+      "fr": "communication",
+      "fr_sim": 1.0,
+      "es": "comunicación",
+      "es_sim": 0.8,
+      "pattern": "-tion family"
+    },
+    {
+      "en": "extinction",
+      "fr": "extinction",
+      "fr_sim": 1.0,
+      "es": "extinción",
+      "es_sim": 0.84,
+      "pattern": "-tion family"
+    }
+  ],
+  "false_friend_present": true,
+  "false_friend_example": "EN computer vs FR ordinateur (similarity 0.44)",
+  "verdict": "EN-FR cognate-like 26/32 (81%), EN-ES 21/32 (66%). MECHANISM CONFIRMED on Romance sample: -tion/-sion/-tude families transfer near-verbatim; tech/brand words identical. QUALIFIED: false friends exist (computer/ordinateur) but are minority; distant languages (Arabic/Mandarin/Japanese) get brand/tech loanwords only, not thousands — so 'you already speak some of it' holds for Romance, collapses for Category IV.",
+  "sources": [
+    "data/cognate_tion_sample.csv",
+    "Benny '1700 identical' list ref",
+    "data/SOURCES.md"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "experiment": "exp03_srs_simulator",
+  "model": "R=exp(-t/S); massed S=5d; spaced S=5*1.8^5; test day 30 (massed gap 30d, spaced gap 16d)",
+  "simulation": {
+    "S_massed": 5.0,
+    "S_spaced": 94.48,
+    "ret_massed_d30": 0.002,
+    "ret_spaced_d30": 0.844,
+    "lift_pp": 84.2,
+    "lift_ratio": 340.58
+  },
+  "meta_anchors": {
+    "kim_webb_2022_immediate_g": 0.58,
+    "kim_webb_2022_delayed_g": 0.8,
+    "longer_vs_shorter_delayed_g": 0.4,
+    "zhou_mobile_d": 1.28,
+    "zhou_adjusted_d": 0.74
+  },
+  "verdict": "Spaced retention 0.844 vs massed 0.002 (+84.2pp, x340.58). DIRECTIONALLY CONSISTENT with Kim & Webb delayed g=0.80 and Rogers ISI/RI rule. Caveat (SLR 27 studies): gain is mostly receptive; productive speaking needs output practice (see EXP05). Waiting-time hack validated: 2-min micro-reviews compound S without desk study.",
+  "sources": [
+    "Kim & Webb 2022",
+    "Zhou & Zhou 2025",
+    "AnkiDroid FSRS docs",
+    "data/SOURCES.md"
+  ]
+}

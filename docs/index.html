@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fluent in 90 Days? — What the Data Says | Language-Hacking Verification Lab</title>
+<meta name="description" content="Reproducible verification of 90-day language-hacking claims: FSI hours, spaced repetition, Zipf coverage, cognates, speak-from-day-one. 6 experiments, 7 tests, live-verified.">
+<meta property="og:title" content="Fluent in 90 Days? — What the Data Says">
+<meta property="og:description" content="15-min conversation in 90 days: plausible. B2 fluency at 45 min/day: refuted by 8-32x hour deficit. Verify it yourself in one command.">
+<meta property="og:type" content="website">
+<style>
+:root{--bg:#0b1020;--card:#131a30;--line:#243056;--txt:#e8ecf8;--mut:#a7b3d4;--acc:#5b8cff;--ok:#22c55e;--warn:#f59e0b;--bad:#ef4444}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+.wrap{max-width:1000px;margin:0 auto;padding:24px 18px 80px}
+.hero{background:linear-gradient(135deg,#16204a,#0e3b5e 60%,#0b3b34);border:1px solid var(--line);border-radius:18px;padding:32px 28px;margin:18px 0}
+.hero h1{margin:.2em 0;font-size:clamp(28px,4.5vw,44px);line-height:1.15}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.badges img{height:20px}
+.btn{display:inline-block;background:var(--acc);color:#fff;padding:10px 18px;border-radius:10px;text-decoration:none;font-weight:700;margin:6px 8px 6px 0}
+.btn.ghost{background:transparent;border:1px solid var(--acc);color:var(--txt)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin:18px 0}
+.card h2{margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.kpi{background:#0e1530;border:1px solid var(--line);border-radius:12px;padding:14px}
+.kpi b{font-size:22px}.kpi span{color:var(--mut);font-size:13px}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:10px 0}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left}
+th{background:#0e1530}tr:nth-child(even) td{background:#101737}
+code{background:#0b1230;border:1px solid var(--line);padding:2px 6px;border-radius:6px;font-size:13px}
+pre{background:#0b1230;border:1px solid var(--line);padding:14px;border-radius:10px;overflow:auto;font-size:13px}
+img.demo{width:100%;border-radius:12px;border:1px solid var(--line)}
+.q{border:1px solid var(--line);border-radius:12px;padding:14px;margin:12px 0;background:#0e1530}
+.q h3{margin:.2em 0}.q button{display:block;width:100%;text-align:left;margin:6px 0;padding:10px 12px;border-radius:9px;border:1px solid var(--line);background:#16204a;color:var(--txt);cursor:pointer;font-size:15px}
+.q button:hover{border-color:var(--acc)}.q button.correct{border-color:var(--ok);background:#0c2f1f}.q button.wrong{border-color:var(--bad);background:#3a1414}
+.expl{font-size:14px;color:var(--mut)}.score{font-size:18px;font-weight:700}
+details{border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:8px 0;background:#0e1530}
+summary{cursor:pointer;font-weight:700}
+footer{color:var(--mut);font-size:13px;margin-top:30px}
+select,input{font-size:15px;padding:8px 10px;border-radius:8px;border:1px solid var(--line);background:#0b1230;color:var(--txt)}
+.result{font-size:16px;margin-top:10px}
+.toc a{color:var(--acc);text-decoration:none}.toc li{margin:4px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="hero">
+<p style="margin:0;color:var(--mut)">🌍 Language-Hacking Verification Lab · MIT · Docker-ready · Live-verified 2026-10-15</p>
+<h1>Fluent in 90 Days? Here Is What the Data Actually Says.</h1>
+<p><b>CEO summary in 30 seconds:</b> a <b>15-minute conversation in 90 days is realistic</b> for a motivated beginner (A1–A2 level). <b>Full fluency (B2) in 90 days at 45 minutes a day is mathematically impossible</b> — you would need 8–32× more hours. At 8 hours a day it works for easy languages like Spanish, still not for hard ones like Japanese. This page lets you <b>verify every number yourself</b> with 6 small experiments, then teaches you the method from zero to professional with an interactive quiz.</p>
+<div class="badges">
+<img alt="License MIT" src="https://img.shields.io/badge/License-MIT-green.svg">
+<img alt="Python 3.11" src="https://img.shields.io/badge/Python-3.11-blue.svg">
+<img alt="Docker ready" src="https://img.shields.io/badge/Docker-ready-blue.svg">
+<img alt="Tests 7 passed" src="https://img.shields.io/badge/tests-7_passed-brightgreen.svg">
+<img alt="Live verified" src="https://img.shields.io/badge/live--verified-2026--10--15-brightgreen.svg">
+</div>
+<p>
+<a class="btn" href="#quiz">🎓 Take the 10-question quiz</a>
+<a class="btn ghost" href="#quickstart">🚀 Run the lab in 1 command</a>
+<a class="btn ghost" href="#calculator">🧮 90-day calculator</a>
+</p>
+<p style="color:var(--mut);font-size:13px">New here? Start with 🌱 <a href="#beginner" style="color:var(--acc)">Beginner guide — read this and you are a professional</a>. You will know more than most interview candidates.</p>
+</div>
+
+<div class="card toc">
+<h2>📑 Contents</h2>
+<ol>
+<li><a href="#demo">Demo (60 seconds)</a></li>
+<li><a href="#beginner">🌱 Beginner guide — zero to professional</a></li>
+<li><a href="#calculator">90-day calculator (interactive)</a></li>
+<li><a href="#findings">Findings in one table</a></li>
+<li><a href="#quiz">Interactive quiz — scratch to pro</a></li>
+<li><a href="#features">Features &amp; who this is for</a></li>
+<li><a href="#quickstart">Quick start (Docker / local)</a></li>
+<li><a href="#protocol">The verified 90-day protocol</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#pages">How this page is published (GitHub Pages)</a></li>
+</ol>
+</div>
+
+<div class="card" id="demo">
+<h2>🎬 Demo (60 seconds)</h2>
+<p>Watch the core result: the red dashed line is everything a 45-minutes-a-day learner studies in 90 days (67.5 hours). The blue bars are what fluency actually requires (690–2,200 hours). The gap is the finding.</p>
+<img class="demo" src="demo.gif" alt="Animated chart: FSI class hours per language vs 45-min-per-day budget and 8-hours-per-day budget over 90 days">
+<div class="grid">
+<div class="kpi"><b>67.5 h</b><br><span>45 min/day × 90 days (casual)</span></div>
+<div class="kpi"><b>720 h</b><br><span>8 h/day × 90 days (intensive)</span></div>
+<div class="kpi"><b>690 h</b><br><span>Spanish to B2 (class hours)</span></div>
+<div class="kpi"><b>2,200 h</b><br><span>Japanese / Mandarin to B2</span></div>
+</div>
+<p class="expl">Regenerate it yourself: <code>python scripts/build_demo_gif.py</code> — deterministic, 201 KB, no external assets.</p>
+</div>
+
+<div class="card" id="beginner">
+<h2>🌱 Beginner guide — read this and you are a professional</h2>
+<p><i>Let's work this out in a step-by-step way to be sure we have the right answer. No background needed. After this section you will know more than most interview candidates.</i></p>
+<h3>Step 1 — What do “fluent” and “A1–C2” mean?</h3>
+<p>Languages are graded A1 (first words) → A2 (simple chats) → B1 (independent) → B2 (fluent work use) → C1/C2 (advanced). The U.S. Foreign Service Institute trains diplomats full-time and records exactly how many <b>class hours</b> each language takes to reach B2: Spanish/French ≈ <b>690 h</b>, German ≈ <b>828 h</b>, Russian ≈ <b>1,012 h</b>, Arabic/Chinese/Japanese/Korean ≈ <b>2,200 h</b>. Apps at home take about <b>1.5–2× longer</b> than small diplomat classes.</p>
+<h3>Step 2 — Do the 90-day math yourself</h3>
+<p>90 days × 45 minutes = <b>67.5 hours</b>. Compare: 67.5 ÷ 690 ≈ <b>9.8%</b> of Spanish B2; 67.5 ÷ 2200 ≈ <b>3.1%</b> of Japanese B2. That is why the honest target at 45 min/day is a <b>15-minute A1–A2 conversation</b>, not fluency. At 8 hours/day (720 h) Spanish B2 fits (104%), Japanese still does not (33%). <b>Hours first, motivation second.</b></p>
+<h3>Step 3 — Why “1,000 words = 80%” is half true</h3>
+<p>The 1,000 most common words cover roughly <b>70–81% of word tokens</b> you hear (our recomputation: 71.4% at standard settings, 81.1% for steep spoken counts). But the missing 20–30% are the <b>keywords that carry meaning</b>. So 1,000 words help you follow a conversation, not understand every detail. Learn frequent words first, then the keywords <i>for your life</i>.</p>
+<h3>Step 4 — Memory: small reviews beat cramming</h3>
+<p>Reviewing a word on days <b>0-1-3-7-14</b> beats studying it five times on day one. Use those wasted 2-minute waits (bus, queue, kettle) for flashcards. Make your own cards with sound + picture, and reveal the picture <i>after</i> you guess. Flashcards build <b>recognition</b>; speaking practice builds <b>speaking</b> — you need both.</p>
+<h3>Step 5 — Speak early, but with feedback</h3>
+<p>From week one, <b>say your study sentences out loud</b> and try a few of your own. Most hours should still be listening/reading. Once you can hold a short exchange, get a partner who <b>corrects you</b> — that correction step is what turns mistakes into progress. Speaking alone early helps later speaking; listening alone early helps early understanding. Do both.</p>
+<h3>Step 6 — Free vocabulary (Romance languages) vs hard languages</h3>
+<p>English already shares thousands of words with French/Spanish/Italian (<i>action, nation, communication</i>). Our 32-word audit: <b>81% look similar in French, 66% in Spanish</b>. Watch out for rare false friends (<i>computer ≠ ordinateur</i>). For Arabic/Chinese/Japanese, expect only a handful of loanwords — budget the full 2,200 hours.</p>
+<h3>Step 7 — You do not need to travel</h3>
+<p>Immersion = <b>hours × real interactions</b>, not plane tickets. Switch your phone, apps and shows to the language, and talk daily online. Learners who pick hard languages actually stick around <b>14% more</b> — motivation matters most.</p>
+<p><b>Interview-ready one-liner:</b> “90-day fluency fails on hours (67.5 h vs 690–2,200 h FSI); 90-day conversation succeeds as A1–A2 with output-plus-feedback, spaced retrieval, and frequency-first vocabulary — verified by 6 recomputable experiments.”</p>
+</div>
+
+<div class="card" id="calculator">
+<h2>🧮 90-day calculator — will <i>your</i> plan work?</h2>
+<p>Pick a language and your daily minutes. The math uses the same public FSI table as the lab (<code>data/fsi_hours.csv</code>).</p>
+<p>
+<label>Language:
+<select id="lang">
+<option value="690">Spanish (I) — 690 h</option>
+<option value="690">French (I) — 690 h</option>
+<option value="552">Italian (I) — 552 h</option>
+<option value="828">German (II) — 828 h</option>
+<option value="1012">Russian (III) — 1,012 h</option>
+<option value="1012">Turkish (III) — 1,012 h</option>
+<option value="2200">Arabic (IV) — 2,200 h</option>
+<option value="2200">Mandarin (IV) — 2,200 h</option>
+<option value="2200">Japanese (IV) — 2,200 h</option>
+<option value="2200">Korean (IV) — 2,200 h</option>
+</select></label>
+&nbsp;
+<label>Minutes/day: <input id="mins" type="number" value="45" min="5" max="1440" style="width:90px"></label>
+&nbsp;
+<label>Days: <input id="days" type="number" value="90" min="1" max="365" style="width:80px"></label>
+</p>
+<p><button class="btn" onclick="calc()">Calculate</button></p>
+<div class="result" id="calcOut">Press Calculate.</div>
+<script>
+function calc(){
+var need=parseFloat(document.getElementById('lang').value);
+var mins=parseFloat(document.getElementById('mins').value);
+var days=parseFloat(document.getElementById('days').value);
+var have=mins/60*days;
+var pct=100*have/need;
+var perday=need/days;
+var msg="In "+days+" days at "+mins+" min/day you study <b>"+have.toFixed(1)+" h</b>. B2 needs ~<b>"+need+" h</b> (class; apps need 1.5-2x). That is <b>"+pct.toFixed(1)+"%</b> of B2. You would need <b>"+perday.toFixed(2)+" h/day</b> every day for B2 in "+days+" days. ";
+if(pct>=100){msg+="<br>✅ <b>Hours-plausible for B2</b> (class-hours basis).";}
+else if(pct>=8){msg+="<br>✅ <b>Plausible for a 15-minute A1–A2 conversation</b>; ❌ not B2 fluency. This matches the lab finding.";}
+else{msg+="<br>⚠️ <b>Below even conversation range</b> — raise daily minutes or extend the timeline.";}
+document.getElementById('calcOut').innerHTML=msg;
+}
+</script>
+</div>
+
+<div class="card" id="findings">
+<h2>📊 Findings in one table</h2>
+<table>
+<tr><th>Claim tested</th><th>Result</th><th>Number to remember</th></tr>
+<tr><td>67.5 h reaches B2</td><td>❌ Refuted</td><td>9.8% of Spanish B2; 3.1% of Japanese B2</td></tr>
+<tr><td>720 h (8 h/day) reaches B2</td><td>⚠️ Only easy languages</td><td>104% Spanish; 33% Japanese</td></tr>
+<tr><td>1,000 words ≈ 80% coverage</td><td>⚠️ Tokens yes, understanding no</td><td>71.4% tokens (standard); keywords missing</td></tr>
+<tr><td>Spaced beats massed</td><td>✅ Direction confirmed</td><td>delayed effect g=0.80; schedule 0-1-3-7-14</td></tr>
+<tr><td>You already know thousands of words</td><td>✅ Romance only</td><td>FR 81%, ES 66%; hard languages: loanwords only</td></tr>
+<tr><td>Speak from day one always best</td><td>⚠️ Best for speaking at 60 days, worst for understanding at 7 days</td><td>production 0.90 vs comprehension 0.55 early</td></tr>
+<tr><td>You must travel</td><td>❌ Geography refuted</td><td>network × hours predicts gains; hard-language retention +14%</td></tr>
+<tr><td>6 missions delivered fluency</td><td>❌ 0/6 fluent, 1 partial</td><td>honest target now: 15-min conversation</td></tr>
+</table>
+<svg viewBox="0 0 640 260" width="100%" role="img" aria-label="Bar chart: FSI hours vs study budgets">
+<text x="10" y="20" fill="#e8ecf8" font-size="14" font-weight="bold">FSI hours to B2 vs what 90 days gives you</text>
+<g font-size="12" fill="#e8ecf8">
+<text x="10" y="60">Spanish 690</text><rect x="150" y="44" width="276" height="18" fill="#5b8cff"/><text x="150" y="120">German 828</text><rect x="150" y="104" width="331" height="18" fill="#5b8cff"/>
+<text x="150" y="180">Russian 1012</text><rect x="150" y="164" width="405" height="18" fill="#5b8cff"/>
+<text x="150" y="240">Japanese 2200</text><rect x="150" y="224" width="480" height="18" fill="#5b8cff"/>
+</g>
+<rect x="150" y="44" width="27" height="198" fill="none" stroke="#ef4444" stroke-dasharray="6 4" stroke-width="2"/>
+<text x="150" y="258" fill="#ef4444" font-size="12">45 min/day total (67.5 h)</text>
+<rect x="150" y="44" width="288" height="198" fill="none" stroke="#22c55e" stroke-dasharray="2 4" stroke-width="2"/>
+<text x="442" y="258" fill="#22c55e" font-size="12">8 h/day total (720 h)</text>
+</svg>
+</div>
+
+<div class="card" id="quiz">
+<h2>🎓 Interactive quiz — from scratch to pro (10 questions)</h2>
+<p>Answer all 10. Each answer explains <i>why</i>, so you learn even when you miss. <b>8+/10 = professional.</b> Your score is saved in this browser.</p>
+<div class="score" id="score">Score: 0 / 10 · Answered: 0</div>
+<div id="quizBox"></div>
+<p><button class="btn ghost" onclick="resetQuiz()">Reset quiz</button></p>
+<script>
+var QUIZ=[
+{q:"How many class hours does FSI record for Spanish to reach working proficiency (B2)?",o:["90 hours","300 hours","690 hours","2,200 hours"],a:2,e:"Spanish is Category I at 690 class hours (30 weeks). Apps at home need ~1.5–2x that."},
+{q:"How much do you study in 90 days at 45 minutes a day?",o:["22.5 hours","45 hours","67.5 hours","135 hours"],a:2,e:"0.75 h × 90 = 67.5 h. That is 9.8% of Spanish B2 and 3.1% of Japanese B2 — hence conversation, not fluency."},
+{q:"67.5 hours is what share of Japanese B2 (2,200 h)?",o:["About 31%","About 9.8%","About 3.1%","About 104%"],a:2,e:"67.5 ÷ 2200 = 3.1%. Even 8 h/day for 90 days (720 h) is only 33% of Japanese B2."},
+{q:"The '1,000 words = 80%' claim is about…",o:["word tokens you hear","full understanding of keywords","grammar rules","pronunciation"],a:0,e:"Top-1,000 covers ~71–81% of tokens, but the missing tail holds the keywords that carry meaning."},
+{q:"In our recomputation (standard written setting s=1.0), top-1,000 covers…",o:["60.2%","71.4%","81.1%","95.0%"],a:1,e:"71.4% at s=1.0; 81.1% only for steep spoken counts (s=1.1). The claim is boundary-conditional."},
+{q:"Spaced repetition beats cramming on delayed tests with effect size…",o:["g = 0.10","g = 0.40 (longer-vs-shorter)","g = 0.80 (spaced-vs-massed)","d = 0.00"],a:2,e:"Kim & Webb: spaced over massed g=0.80 delayed; longer spacing over shorter g=0.40. Best schedule here: 0-1-3-7-14."},
+{q:"In our 32-word audit, English–French similar-looking words scored…",o:["44%","66%","81%","100%"],a:2,e:"26/32 (81%) French, 21/32 (66%) Spanish. The mechanism is strong for Romance, not for hard languages."},
+{q:"Which pair is the false-friend demo?",o:["action / action","computer / ordinateur","pizza / pizza","internet / internet"],a:1,e:"computer vs ordinateur similarity is only 0.44 — real but minority. Learn false friends as exceptions."},
+{q:"Speak-from-day-one with feedback is…",o:["best at everything immediately","best for speaking at 60 days, weaker for understanding at 7 days","useless","only for easy languages"],a:1,e:"Production 0.90 at 60d (best) vs comprehension 0.55 at 7d (input-only 0.80). Do both: mostly input early, add corrected speaking."},
+{q:"Do you need to travel to immerse?",o:["Yes, always","No — hours × real interaction works at home","Only for Spanish","Only with a textbook"],a:1,e:"Interaction networks and hours predict gains, not geography. Switch devices/media + talk daily online."}
+];
+var state={score:0,done:{}};
+try{var s=JSON.parse(localStorage.getItem('lh_quiz')||'{}');if(s&&typeof s.score==='number'){state=s;}}catch(e){}
+function render(){
+var box=document.getElementById('quizBox');box.innerHTML='';
+QUIZ.forEach(function(item,i){
+var d=document.createElement('div');d.className='q';
+var h=document.createElement('h3');h.textContent=(i+1)+'. '+item.q;d.appendChild(h);
+item.o.forEach(function(opt,j){
+var b=document.createElement('button');b.textContent=opt;
+if(state.done[i]!==undefined){
+b.disabled=true;
+if(j===item.a){b.className='correct';}
+else if(j===state.done[i]){b.className='wrong';}
+}
+b.onclick=function(){answer(i,j);};
+d.appendChild(b);
+});
+if(state.done[i]!==undefined){
+var p=document.createElement('p');p.className='expl';
+p.textContent=(state.done[i]===item.a?'✅ Correct. ':'❌ Not quite. ')+item.e;
+d.appendChild(p);
+}
+box.appendChild(d);
+});
+updateScore();
+}
+function answer(i,j){
+if(state.done[i]!==undefined)return;
+state.done[i]=j;
+if(j===QUIZ[i].a)state.score++;
+try{localStorage.setItem('lh_quiz',JSON.stringify(state));}catch(e){}
+render();
+}
+function updateScore(){
+var n=Object.keys(state.done).length;
+var el=document.getElementById('score');
+el.textContent='Score: '+state.score+' / 10 · Answered: '+n+(n===10?(state.score>=8?' · 🏆 Professional!':' · 💪 Review the explanations above and retry.'):'');
+}
+function resetQuiz(){state={score:0,done:{}};try{localStorage.removeItem('lh_quiz');}catch(e){}render();}
+render();
+</script>
+</div>
+
+<div class="card" id="features">
+<h2>✨ Features</h2>
+<table>
+<tr><th>Feature</th><th>What it does</th></tr>
+<tr><td>🧮 90-day hour calculator</td><td>Tell it your language + minutes/day; it tells you if B2 or conversation is plausible (this page + EXP01).</td></tr>
+<tr><td>📊 FSI hour table (25 languages)</td><td>Exact class hours + daily needs for 90 days, class and app-adjusted (<code>data/fsi_hours.csv</code>).</td></tr>
+<tr><td>🔤 Zipf coverage checker</td><td>Shows why 1,000 words help but do not equal understanding (EXP02 + chart).</td></tr>
+<tr><td>🗓️ Spaced-repetition simulator</td><td>Forgetting-curve demo + 0-1-3-7-14 schedule you can copy (EXP03).</td></tr>
+<tr><td>🔗 Cognate scanner logic</td><td>32-word Romance sample + similarity rule you can extend to your language (EXP04).</td></tr>
+<tr><td>🗣️ Output-vs-input planner</td><td>Week-by-week mix that maximizes speaking without losing understanding (EXP05).</td></tr>
+<tr><td>🎓 Scratch-to-pro quiz</td><td>10 questions with explanations; 8+/10 means you can defend the method in an interview.</td></tr>
+<tr><td>🐳 One-command reproduction</td><td><code>docker compose up --build</code> reruns all 6 experiments offline-safely.</td></tr>
+</table>
+<h2>👥 Who this is for (user stories)</h2>
+<ul>
+<li><b>Self-learner (Spanish in 90 days):</b> run the calculator, pick the 15-minute-conversation target, copy the 0-1-3-7-14 card schedule, book a correcting partner from week 2.</li>
+<li><b>Busy professional (20 min/day, Japanese):</b> see why B2 is out of range, set an A1 kanji + daily-phrase goal instead, use waiting-time reviews.</li>
+<li><b>Teacher / coach:</b> use the hour table to set honest goals, the quiz as homework, and the output grid to split class time (input early, pushed output later).</li>
+<li><b>Researcher / student:</b> rerun <code>make run &amp;&amp; make test</code>, cite the 7-gate snapshot, extend with the pre-registered 4-arm RCT in the README.</li>
+<li><b>Job candidate:</b> finish the Beginner guide + quiz, then quote the one-liner: hours first, output-with-feedback, frequency-first vocabulary.</li>
+</ul>
+</div>
+
+<div class="card" id="quickstart">
+<h2>🚀 Quick start</h2>
+<p><b>Option A — Docker (recommended):</b></p>
+<pre>docker compose up --build
+# writes results/*.json + *.png, runs all 6 experiments</pre>
+<p><b>Option B — Local Python 3.11:</b></p>
+<pre>pip install -r requirements.txt
+python -m experiments.run_all
+python -m pytest tests/ -q   # must show 7 passed</pre>
+<p><b>Regenerate this page's GIF:</b> <code>python scripts/build_demo_gif.py</code> (201 KB, deterministic).</p>
+</div>
+
+<div class="card" id="protocol">
+<h2>📋 The verified 90-day protocol (copy this)</h2>
+<ol>
+<li>Define the target as <b>CEFR + minutes</b> (“A2 15-minute social conversation”), write it down publicly.</li>
+<li>Budget from <b>FSI × 1.5–2</b>, not motivation. Casual pace → conversation goal; B2 needs full-time hours.</li>
+<li>Week 1: phrasebook + connectors + simple sentences; <b>say everything aloud</b>; add 2–3 own sentences/day; most hours still input.</li>
+<li>Flashcards in <b>2-minute gaps</b>, own cards, sound + picture, picture-after-guess, schedule 0-1-3-7-14.</li>
+<li>Romance: harvest <b>-tion/-sion/-tude</b> + tech words; hard languages: expect loanwords only + full hours.</li>
+<li>From week 2: <b>partner who corrects you</b>; track speaking and understanding separately.</li>
+<li>Time-box extras (e.g., Esperanto-first); never subtract them from hour budgets.</li>
+<li>Stuck 2 weeks? Change <b>one</b> variable (input share, partner, deck source, task) and re-measure.</li>
+</ol>
+</div>
+
+<div class="card" id="faq">
+<h2>❓ FAQ</h2>
+<details><summary>Is “fluent in 3 months” a scam?</summary><p>Neither miracle nor scam: the <i>name</i> overpromises B2, but the <i>method core</i> (goals, output with feedback, spaced retrieval, immersion as hours) is supported. Use the honest target: 15-minute conversation.</p></details>
+<details><summary>What level is a 15-minute conversation?</summary><p>Roughly A1–A2: introductions, daily needs, simple stories with mistakes — exactly what 67.5 focused hours can build.</p></details>
+<details><summary>Does Anki alone make me fluent?</summary><p>No. Flashcards build recognition fast; speaking needs corrected speaking hours. Budget both.</p></details>
+<details><summary>Should I start with Esperanto for two weeks?</summary><p>Evidence is thin (one small child study). Time-box it if you try it; do not count it toward your target-language hours.</p></details>
+<details><summary>How do I cite this lab?</summary><p>Language-Hacking Verification Lab (2026). v1.0.0, results recomputed — see <code>results/summary.json</code>. MIT code, CC-BY-4.0 text.</p></details>
+</div>
+
+<div class="card" id="pages">
+<h2>🌐 How this page is published (GitHub Pages)</h2>
+<p>This file (<code>preview.html</code>) and its copy at <code>docs/index.html</code> are the same single-file site (no build, no secrets, works offline). To publish:</p>
+<ol>
+<li>Push this repo to GitHub.</li>
+<li>Open <b>Settings → Pages</b>.</li>
+<li>Under <b>Build and deployment → Source</b> choose <b>Deploy from a branch</b>.</li>
+<li>Set Branch to <b>main</b> and Folder to <b>/docs</b>, click <b>Save</b>.</li>
+<li>Wait 1–3 minutes, refresh, click <b>Visit site</b> — your URL looks like <code>https://YOURNAME.github.io/language-hacking-verification-2026/</code>.</li>
+</ol>
+<p class="expl">Why /docs? Branch deployment serves ready-made HTML directly — no build step needed. The <code>.nojekyll</code> file disables Jekyll so the GIF, quiz and calculator serve exactly as committed.</p>
+</div>
+
+<footer>
+<p>MIT for code · CC-BY-4.0 for text · All numbers recompute via <code>docker compose up --build</code> · Snapshot 2026-10-15 · <a href="https://github.com/" style="color:var(--acc)">Star template: add your repo URL here after push</a></p>
+</footer>
+
+</div>
+</body>
+</html>

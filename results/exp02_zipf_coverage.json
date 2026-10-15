@@ -1,0 +1,36 @@
+{
+  "experiment": "exp02_zipf_coverage",
+  "N": 20000,
+  "results": {
+    "s=0.9": {
+      "cov_500": 52.5,
+      "cov_1000": 60.2,
+      "cov_2000": 68.3,
+      "rank_80pct": 4972,
+      "rank_85pct": 7173,
+      "rank_90pct": 10216
+    },
+    "s=1.0": {
+      "cov_500": 64.8,
+      "cov_1000": 71.4,
+      "cov_2000": 78.0,
+      "rank_80pct": 2459,
+      "rank_85pct": 4152,
+      "rank_90pct": 7012
+    },
+    "s=1.1": {
+      "cov_500": 75.9,
+      "cov_1000": 81.1,
+      "cov_2000": 86.0,
+      "rank_80pct": 859,
+      "rank_85pct": 1729,
+      "rank_90pct": 3665
+    }
+  },
+  "verdict": "At s=1.0: top-500 covers 64.8%, top-1000 covers 71.4% of tokens; 80% needs rank 2459. At s=1.1: top-1000 covers 81.1%, 80% needs rank 859. BOUNDARY-CONDITIONAL: the 80-85% claim holds only for steep distributions (s~=1.1, spoken/lemmatized word-families); at canonical written s=1.0 it overstates by ~9-14pp. REFUTED as comprehension claim either way: the uncovered tail holds content keywords, so 500 words != 80% understanding. This is the hidden token-vs-keyword gap.",
+  "sources": [
+    "commonwords.app",
+    "thelernen.org 1000-word Spanish list",
+    "data/SOURCES.md"
+  ]
+}

@@ -1,0 +1,33 @@
+english,french,spanish,italian,portuguese,pattern
+action,action,acción,azione,ação,-tion/-ción/-zione/-ção
+nation,nation,nación,nazione,nação,-tion family
+precipitation,précipitation,precipitación,precipitazione,precipitação,-tion family
+solution,solution,solución,soluzione,solução,-tion family
+frustration,frustration,frustración,frustrazione,frustração,-tion family
+tradition,tradition,tradición,tradizione,tradição,-tion family
+communication,communication,comunicación,comunicazione,comunicação,-tion family
+extinction,extinction,extinción,estinzione,extinção,-tion family
+gratitude,gratitude,gratitud,gratitudine,gratidão,-tude family
+magnitude,magnitude,magnitud,magnitudine,magnitude,-tude family
+explosion,explosion,explosión,esplosione,explosão,-sion family
+expression,expression,expresión,espressione,expressão,-sion family
+encouragement,encouragement,aliento (counter-example: encouragement=ánimo),incoraggiamento,encorajamento,-ment family (partial)
+segment,segment,segmento,segmento,segmento,-ment/-ent family
+garage,garage,garaje,garage,garagem,-age family
+camouflage,camouflage,camuflaje,camuffamento,camuflagem,-age family
+opinion,opinion,opinión,opinione,opinião,-ion family
+perspective,perspective,perspectiva,prospettiva,perspectiva,-ive/-iva family
+guide,guide,guía,guida,guia,identical FR-EN
+enter,entrer,entrar,entrare,entrar,verb -er/-ar family
+museum,musée,museo,museo,museu,cognate with orthographic shift
+telephone,téléphone,teléfono,telefono,telefone,tech cognate
+internet,internet,internet,internet,internet,tech identical
+computer,ordinateur (FALSE FRIEND for computer),computadora,computer,computador,tech partial + false-friend demo
+pizza,pizza,pizza,pizza,pizza,global food identical
+cola,cola,cola,cola,cola,brand identical
+beach,plage,playa,spiaggia,praia,playa-player mnemonic demo (Benny example)
+station,gare,estación,stazione,estação,gare-Garfield mnemonic demo (Benny example)
+where,où,dónde,dove,onde,dove-duvet mnemonic demo (Benny example)
+toilet,toilettes,baño,gabinetto,banheiro,gabinetto phrase demo (Benny example)
+first,premier,primero,primo,primeiro,prvni-pro-van demo is Czech (see notes)
+hello,bonjour,hola,ciao,olá,sawadee-sour-tea demo is Thai (see notes)

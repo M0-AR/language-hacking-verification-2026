@@ -1,0 +1,9 @@
+services:
+  lab:
+    build: .
+    volumes:
+      - ./results:/lab/results
+    environment:
+      - PYTHONUNBUFFERED=1
+      - OFFLINE_OK=1
+    command: python experiments/run_all.py

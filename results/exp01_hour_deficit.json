@@ -1,0 +1,894 @@
+{
+  "experiment": "exp01_hour_deficit",
+  "days": 90,
+  "bootcamp_total_h": 67.5,
+  "intensive_total_h": 720.0,
+  "falsifiable_claim": "67.5h (45min/d x 90d) cannot reach FSI B2/C1 (552-2200h); it can reach A1/15-min conversation.",
+  "spotlight": {
+    "Spanish": [
+      {
+        "language": "Spanish",
+        "category": "I",
+        "scenario": "fsi_class",
+        "need_hours": 690.0,
+        "req_h_per_day_90d": 7.67,
+        "bootcamp_67_5h_covers_pct": 9.8,
+        "intensive_720h_covers_pct": 104.3
+      },
+      {
+        "language": "Spanish",
+        "category": "I",
+        "scenario": "app_1.5x",
+        "need_hours": 1035.0,
+        "req_h_per_day_90d": 11.5,
+        "bootcamp_67_5h_covers_pct": 6.5,
+        "intensive_720h_covers_pct": 69.6
+      },
+      {
+        "language": "Spanish",
+        "category": "I",
+        "scenario": "app_2x",
+        "need_hours": 1380.0,
+        "req_h_per_day_90d": 15.33,
+        "bootcamp_67_5h_covers_pct": 4.9,
+        "intensive_720h_covers_pct": 52.2
+      }
+    ],
+    "French": [
+      {
+        "language": "French",
+        "category": "I",
+        "scenario": "fsi_class",
+        "need_hours": 690.0,
+        "req_h_per_day_90d": 7.67,
+        "bootcamp_67_5h_covers_pct": 9.8,
+        "intensive_720h_covers_pct": 104.3
+      },
+      {
+        "language": "French",
+        "category": "I",
+        "scenario": "app_1.5x",
+        "need_hours": 1035.0,
+        "req_h_per_day_90d": 11.5,
+        "bootcamp_67_5h_covers_pct": 6.5,
+        "intensive_720h_covers_pct": 69.6
+      },
+      {
+        "language": "French",
+        "category": "I",
+        "scenario": "app_2x",
+        "need_hours": 1380.0,
+        "req_h_per_day_90d": 15.33,
+        "bootcamp_67_5h_covers_pct": 4.9,
+        "intensive_720h_covers_pct": 52.2
+      }
+    ],
+    "German": [
+      {
+        "language": "German",
+        "category": "II",
+        "scenario": "fsi_class",
+        "need_hours": 828.0,
+        "req_h_per_day_90d": 9.2,
+        "bootcamp_67_5h_covers_pct": 8.2,
+        "intensive_720h_covers_pct": 87.0
+      },
+      {
+        "language": "German",
+        "category": "II",
+        "scenario": "app_1.5x",
+        "need_hours": 1242.0,
+        "req_h_per_day_90d": 13.8,
+        "bootcamp_67_5h_covers_pct": 5.4,
+        "intensive_720h_covers_pct": 58.0
+      },
+      {
+        "language": "German",
+        "category": "II",
+        "scenario": "app_2x",
+        "need_hours": 1656.0,
+        "req_h_per_day_90d": 18.4,
+        "bootcamp_67_5h_covers_pct": 4.1,
+        "intensive_720h_covers_pct": 43.5
+      }
+    ],
+    "Russian": [
+      {
+        "language": "Russian",
+        "category": "III",
+        "scenario": "fsi_class",
+        "need_hours": 1012.0,
+        "req_h_per_day_90d": 11.24,
+        "bootcamp_67_5h_covers_pct": 6.7,
+        "intensive_720h_covers_pct": 71.1
+      },
+      {
+        "language": "Russian",
+        "category": "III",
+        "scenario": "app_1.5x",
+        "need_hours": 1518.0,
+        "req_h_per_day_90d": 16.87,
+        "bootcamp_67_5h_covers_pct": 4.4,
+        "intensive_720h_covers_pct": 47.4
+      },
+      {
+        "language": "Russian",
+        "category": "III",
+        "scenario": "app_2x",
+        "need_hours": 2024.0,
+        "req_h_per_day_90d": 22.49,
+        "bootcamp_67_5h_covers_pct": 3.3,
+        "intensive_720h_covers_pct": 35.6
+      }
+    ],
+    "Arabic": [
+      {
+        "language": "Arabic",
+        "category": "IV",
+        "scenario": "fsi_class",
+        "need_hours": 2200.0,
+        "req_h_per_day_90d": 24.44,
+        "bootcamp_67_5h_covers_pct": 3.1,
+        "intensive_720h_covers_pct": 32.7
+      },
+      {
+        "language": "Arabic",
+        "category": "IV",
+        "scenario": "app_1.5x",
+        "need_hours": 3300.0,
+        "req_h_per_day_90d": 36.67,
+        "bootcamp_67_5h_covers_pct": 2.0,
+        "intensive_720h_covers_pct": 21.8
+      },
+      {
+        "language": "Arabic",
+        "category": "IV",
+        "scenario": "app_2x",
+        "need_hours": 4400.0,
+        "req_h_per_day_90d": 48.89,
+        "bootcamp_67_5h_covers_pct": 1.5,
+        "intensive_720h_covers_pct": 16.4
+      }
+    ],
+    "Mandarin": [
+      {
+        "language": "Mandarin",
+        "category": "IV",
+        "scenario": "fsi_class",
+        "need_hours": 2200.0,
+        "req_h_per_day_90d": 24.44,
+        "bootcamp_67_5h_covers_pct": 3.1,
+        "intensive_720h_covers_pct": 32.7
+      },
+      {
+        "language": "Mandarin",
+        "category": "IV",
+        "scenario": "app_1.5x",
+        "need_hours": 3300.0,
+        "req_h_per_day_90d": 36.67,
+        "bootcamp_67_5h_covers_pct": 2.0,
+        "intensive_720h_covers_pct": 21.8
+      },
+      {
+        "language": "Mandarin",
+        "category": "IV",
+        "scenario": "app_2x",
+        "need_hours": 4400.0,
+        "req_h_per_day_90d": 48.89,
+        "bootcamp_67_5h_covers_pct": 1.5,
+        "intensive_720h_covers_pct": 16.4
+      }
+    ],
+    "Japanese": [
+      {
+        "language": "Japanese",
+        "category": "IV",
+        "scenario": "fsi_class",
+        "need_hours": 2200.0,
+        "req_h_per_day_90d": 24.44,
+        "bootcamp_67_5h_covers_pct": 3.1,
+        "intensive_720h_covers_pct": 32.7
+      },
+      {
+        "language": "Japanese",
+        "category": "IV",
+        "scenario": "app_1.5x",
+        "need_hours": 3300.0,
+        "req_h_per_day_90d": 36.67,
+        "bootcamp_67_5h_covers_pct": 2.0,
+        "intensive_720h_covers_pct": 21.8
+      },
+      {
+        "language": "Japanese",
+        "category": "IV",
+        "scenario": "app_2x",
+        "need_hours": 4400.0,
+        "req_h_per_day_90d": 48.89,
+        "bootcamp_67_5h_covers_pct": 1.5,
+        "intensive_720h_covers_pct": 16.4
+      }
+    ]
+  },
+  "all_rows": [
+    {
+      "language": "Danish",
+      "category": "I",
+      "scenario": "fsi_class",
+      "need_hours": 552.0,
+      "req_h_per_day_90d": 6.13,
+      "bootcamp_67_5h_covers_pct": 12.2,
+      "intensive_720h_covers_pct": 130.4
+    },
+    {
+      "language": "Danish",
+      "category": "I",
+      "scenario": "app_1.5x",
+      "need_hours": 828.0,
+      "req_h_per_day_90d": 9.2,
+      "bootcamp_67_5h_covers_pct": 8.2,
+      "intensive_720h_covers_pct": 87.0
+    },
+    {
+      "language": "Danish",
+      "category": "I",
+      "scenario": "app_2x",
+      "need_hours": 1104.0,
+      "req_h_per_day_90d": 12.27,
+      "bootcamp_67_5h_covers_pct": 6.1,
+      "intensive_720h_covers_pct": 65.2
+    },
+    {
+      "language": "Dutch",
+      "category": "I",
+      "scenario": "fsi_class",
+      "need_hours": 552.0,
+      "req_h_per_day_90d": 6.13,
+      "bootcamp_67_5h_covers_pct": 12.2,
+      "intensive_720h_covers_pct": 130.4
+    },
+    {
+      "language": "Dutch",
+      "category": "I",
+      "scenario": "app_1.5x",
+      "need_hours": 828.0,
+      "req_h_per_day_90d": 9.2,
+      "bootcamp_67_5h_covers_pct": 8.2,
+      "intensive_720h_covers_pct": 87.0
+    },
+    {
+      "language": "Dutch",
+      "category": "I",
+      "scenario": "app_2x",
+      "need_hours": 1104.0,
+      "req_h_per_day_90d": 12.27,
+      "bootcamp_67_5h_covers_pct": 6.1,
+      "intensive_720h_covers_pct": 65.2
+    },
+    {
+      "language": "Italian",
+      "category": "I",
+      "scenario": "fsi_class",
+      "need_hours": 552.0,
+      "req_h_per_day_90d": 6.13,
+      "bootcamp_67_5h_covers_pct": 12.2,
+      "intensive_720h_covers_pct": 130.4
+    },
+    {
+      "language": "Italian",
+      "category": "I",
+      "scenario": "app_1.5x",
+      "need_hours": 828.0,
+      "req_h_per_day_90d": 9.2,
+      "bootcamp_67_5h_covers_pct": 8.2,
+      "intensive_720h_covers_pct": 87.0
+    },
+    {
+      "language": "Italian",
+      "category": "I",
+      "scenario": "app_2x",
+      "need_hours": 1104.0,
+      "req_h_per_day_90d": 12.27,
+      "bootcamp_67_5h_covers_pct": 6.1,
+      "intensive_720h_covers_pct": 65.2
+    },
+    {
+      "language": "Norwegian",
+      "category": "I",
+      "scenario": "fsi_class",
+      "need_hours": 552.0,
+      "req_h_per_day_90d": 6.13,
+      "bootcamp_67_5h_covers_pct": 12.2,
+      "intensive_720h_covers_pct": 130.4
+    },
+    {
+      "language": "Norwegian",
+      "category": "I",
+      "scenario": "app_1.5x",
+      "need_hours": 828.0,
+      "req_h_per_day_90d": 9.2,
+      "bootcamp_67_5h_covers_pct": 8.2,
+      "intensive_720h_covers_pct": 87.0
+    },
+    {
+      "language": "Norwegian",
+      "category": "I",
+      "scenario": "app_2x",
+      "need_hours": 1104.0,
+      "req_h_per_day_90d": 12.27,
+      "bootcamp_67_5h_covers_pct": 6.1,
+      "intensive_720h_covers_pct": 65.2
+    },
+    {
+      "language": "Portuguese",
+      "category": "I",
+      "scenario": "fsi_class",
+      "need_hours": 552.0,
+      "req_h_per_day_90d": 6.13,
+      "bootcamp_67_5h_covers_pct": 12.2,
+      "intensive_720h_covers_pct": 130.4
+    },
+    {
+      "language": "Portuguese",
+      "category": "I",
+      "scenario": "app_1.5x",
+      "need_hours": 828.0,
+      "req_h_per_day_90d": 9.2,
+      "bootcamp_67_5h_covers_pct": 8.2,
+      "intensive_720h_covers_pct": 87.0
+    },
+    {
+      "language": "Portuguese",
+      "category": "I",
+      "scenario": "app_2x",
+      "need_hours": 1104.0,
+      "req_h_per_day_90d": 12.27,
+      "bootcamp_67_5h_covers_pct": 6.1,
+      "intensive_720h_covers_pct": 65.2
+    },
+    {
+      "language": "Swedish",
+      "category": "I",
+      "scenario": "fsi_class",
+      "need_hours": 552.0,
+      "req_h_per_day_90d": 6.13,
+      "bootcamp_67_5h_covers_pct": 12.2,
+      "intensive_720h_covers_pct": 130.4
+    },
+    {
+      "language": "Swedish",
+      "category": "I",
+      "scenario": "app_1.5x",
+      "need_hours": 828.0,
+      "req_h_per_day_90d": 9.2,
+      "bootcamp_67_5h_covers_pct": 8.2,
+      "intensive_720h_covers_pct": 87.0
+    },
+    {
+      "language": "Swedish",
+      "category": "I",
+      "scenario": "app_2x",
+      "need_hours": 1104.0,
+      "req_h_per_day_90d": 12.27,
+      "bootcamp_67_5h_covers_pct": 6.1,
+      "intensive_720h_covers_pct": 65.2
+    },
+    {
+      "language": "French",
+      "category": "I",
+      "scenario": "fsi_class",
+      "need_hours": 690.0,
+      "req_h_per_day_90d": 7.67,
+      "bootcamp_67_5h_covers_pct": 9.8,
+      "intensive_720h_covers_pct": 104.3
+    },
+    {
+      "language": "French",
+      "category": "I",
+      "scenario": "app_1.5x",
+      "need_hours": 1035.0,
+      "req_h_per_day_90d": 11.5,
+      "bootcamp_67_5h_covers_pct": 6.5,
+      "intensive_720h_covers_pct": 69.6
+    },
+    {
+      "language": "French",
+      "category": "I",
+      "scenario": "app_2x",
+      "need_hours": 1380.0,
+      "req_h_per_day_90d": 15.33,
+      "bootcamp_67_5h_covers_pct": 4.9,
+      "intensive_720h_covers_pct": 52.2
+    },
+    {
+      "language": "Spanish",
+      "category": "I",
+      "scenario": "fsi_class",
+      "need_hours": 690.0,
+      "req_h_per_day_90d": 7.67,
+      "bootcamp_67_5h_covers_pct": 9.8,
+      "intensive_720h_covers_pct": 104.3
+    },
+    {
+      "language": "Spanish",
+      "category": "I",
+      "scenario": "app_1.5x",
+      "need_hours": 1035.0,
+      "req_h_per_day_90d": 11.5,
+      "bootcamp_67_5h_covers_pct": 6.5,
+      "intensive_720h_covers_pct": 69.6
+    },
+    {
+      "language": "Spanish",
+      "category": "I",
+      "scenario": "app_2x",
+      "need_hours": 1380.0,
+      "req_h_per_day_90d": 15.33,
+      "bootcamp_67_5h_covers_pct": 4.9,
+      "intensive_720h_covers_pct": 52.2
+    },
+    {
+      "language": "German",
+      "category": "II",
+      "scenario": "fsi_class",
+      "need_hours": 828.0,
+      "req_h_per_day_90d": 9.2,
+      "bootcamp_67_5h_covers_pct": 8.2,
+      "intensive_720h_covers_pct": 87.0
+    },
+    {
+      "language": "German",
+      "category": "II",
+      "scenario": "app_1.5x",
+      "need_hours": 1242.0,
+      "req_h_per_day_90d": 13.8,
+      "bootcamp_67_5h_covers_pct": 5.4,
+      "intensive_720h_covers_pct": 58.0
+    },
+    {
+      "language": "German",
+      "category": "II",
+      "scenario": "app_2x",
+      "need_hours": 1656.0,
+      "req_h_per_day_90d": 18.4,
+      "bootcamp_67_5h_covers_pct": 4.1,
+      "intensive_720h_covers_pct": 43.5
+    },
+    {
+      "language": "Indonesian",
+      "category": "II",
+      "scenario": "fsi_class",
+      "need_hours": 828.0,
+      "req_h_per_day_90d": 9.2,
+      "bootcamp_67_5h_covers_pct": 8.2,
+      "intensive_720h_covers_pct": 87.0
+    },
+    {
+      "language": "Indonesian",
+      "category": "II",
+      "scenario": "app_1.5x",
+      "need_hours": 1242.0,
+      "req_h_per_day_90d": 13.8,
+      "bootcamp_67_5h_covers_pct": 5.4,
+      "intensive_720h_covers_pct": 58.0
+    },
+    {
+      "language": "Indonesian",
+      "category": "II",
+      "scenario": "app_2x",
+      "need_hours": 1656.0,
+      "req_h_per_day_90d": 18.4,
+      "bootcamp_67_5h_covers_pct": 4.1,
+      "intensive_720h_covers_pct": 43.5
+    },
+    {
+      "language": "Swahili",
+      "category": "II",
+      "scenario": "fsi_class",
+      "need_hours": 828.0,
+      "req_h_per_day_90d": 9.2,
+      "bootcamp_67_5h_covers_pct": 8.2,
+      "intensive_720h_covers_pct": 87.0
+    },
+    {
+      "language": "Swahili",
+      "category": "II",
+      "scenario": "app_1.5x",
+      "need_hours": 1242.0,
+      "req_h_per_day_90d": 13.8,
+      "bootcamp_67_5h_covers_pct": 5.4,
+      "intensive_720h_covers_pct": 58.0
+    },
+    {
+      "language": "Swahili",
+      "category": "II",
+      "scenario": "app_2x",
+      "need_hours": 1656.0,
+      "req_h_per_day_90d": 18.4,
+      "bootcamp_67_5h_covers_pct": 4.1,
+      "intensive_720h_covers_pct": 43.5
+    },
+    {
+      "language": "Haitian Creole",
+      "category": "II",
+      "scenario": "fsi_class",
+      "need_hours": 828.0,
+      "req_h_per_day_90d": 9.2,
+      "bootcamp_67_5h_covers_pct": 8.2,
+      "intensive_720h_covers_pct": 87.0
+    },
+    {
+      "language": "Haitian Creole",
+      "category": "II",
+      "scenario": "app_1.5x",
+      "need_hours": 1242.0,
+      "req_h_per_day_90d": 13.8,
+      "bootcamp_67_5h_covers_pct": 5.4,
+      "intensive_720h_covers_pct": 58.0
+    },
+    {
+      "language": "Haitian Creole",
+      "category": "II",
+      "scenario": "app_2x",
+      "need_hours": 1656.0,
+      "req_h_per_day_90d": 18.4,
+      "bootcamp_67_5h_covers_pct": 4.1,
+      "intensive_720h_covers_pct": 43.5
+    },
+    {
+      "language": "Malay",
+      "category": "II",
+      "scenario": "fsi_class",
+      "need_hours": 828.0,
+      "req_h_per_day_90d": 9.2,
+      "bootcamp_67_5h_covers_pct": 8.2,
+      "intensive_720h_covers_pct": 87.0
+    },
+    {
+      "language": "Malay",
+      "category": "II",
+      "scenario": "app_1.5x",
+      "need_hours": 1242.0,
+      "req_h_per_day_90d": 13.8,
+      "bootcamp_67_5h_covers_pct": 5.4,
+      "intensive_720h_covers_pct": 58.0
+    },
+    {
+      "language": "Malay",
+      "category": "II",
+      "scenario": "app_2x",
+      "need_hours": 1656.0,
+      "req_h_per_day_90d": 18.4,
+      "bootcamp_67_5h_covers_pct": 4.1,
+      "intensive_720h_covers_pct": 43.5
+    },
+    {
+      "language": "Russian",
+      "category": "III",
+      "scenario": "fsi_class",
+      "need_hours": 1012.0,
+      "req_h_per_day_90d": 11.24,
+      "bootcamp_67_5h_covers_pct": 6.7,
+      "intensive_720h_covers_pct": 71.1
+    },
+    {
+      "language": "Russian",
+      "category": "III",
+      "scenario": "app_1.5x",
+      "need_hours": 1518.0,
+      "req_h_per_day_90d": 16.87,
+      "bootcamp_67_5h_covers_pct": 4.4,
+      "intensive_720h_covers_pct": 47.4
+    },
+    {
+      "language": "Russian",
+      "category": "III",
+      "scenario": "app_2x",
+      "need_hours": 2024.0,
+      "req_h_per_day_90d": 22.49,
+      "bootcamp_67_5h_covers_pct": 3.3,
+      "intensive_720h_covers_pct": 35.6
+    },
+    {
+      "language": "Hindi",
+      "category": "III",
+      "scenario": "fsi_class",
+      "need_hours": 1012.0,
+      "req_h_per_day_90d": 11.24,
+      "bootcamp_67_5h_covers_pct": 6.7,
+      "intensive_720h_covers_pct": 71.1
+    },
+    {
+      "language": "Hindi",
+      "category": "III",
+      "scenario": "app_1.5x",
+      "need_hours": 1518.0,
+      "req_h_per_day_90d": 16.87,
+      "bootcamp_67_5h_covers_pct": 4.4,
+      "intensive_720h_covers_pct": 47.4
+    },
+    {
+      "language": "Hindi",
+      "category": "III",
+      "scenario": "app_2x",
+      "need_hours": 2024.0,
+      "req_h_per_day_90d": 22.49,
+      "bootcamp_67_5h_covers_pct": 3.3,
+      "intensive_720h_covers_pct": 35.6
+    },
+    {
+      "language": "Polish",
+      "category": "III",
+      "scenario": "fsi_class",
+      "need_hours": 1012.0,
+      "req_h_per_day_90d": 11.24,
+      "bootcamp_67_5h_covers_pct": 6.7,
+      "intensive_720h_covers_pct": 71.1
+    },
+    {
+      "language": "Polish",
+      "category": "III",
+      "scenario": "app_1.5x",
+      "need_hours": 1518.0,
+      "req_h_per_day_90d": 16.87,
+      "bootcamp_67_5h_covers_pct": 4.4,
+      "intensive_720h_covers_pct": 47.4
+    },
+    {
+      "language": "Polish",
+      "category": "III",
+      "scenario": "app_2x",
+      "need_hours": 2024.0,
+      "req_h_per_day_90d": 22.49,
+      "bootcamp_67_5h_covers_pct": 3.3,
+      "intensive_720h_covers_pct": 35.6
+    },
+    {
+      "language": "Finnish",
+      "category": "III",
+      "scenario": "fsi_class",
+      "need_hours": 1012.0,
+      "req_h_per_day_90d": 11.24,
+      "bootcamp_67_5h_covers_pct": 6.7,
+      "intensive_720h_covers_pct": 71.1
+    },
+    {
+      "language": "Finnish",
+      "category": "III",
+      "scenario": "app_1.5x",
+      "need_hours": 1518.0,
+      "req_h_per_day_90d": 16.87,
+      "bootcamp_67_5h_covers_pct": 4.4,
+      "intensive_720h_covers_pct": 47.4
+    },
+    {
+      "language": "Finnish",
+      "category": "III",
+      "scenario": "app_2x",
+      "need_hours": 2024.0,
+      "req_h_per_day_90d": 22.49,
+      "bootcamp_67_5h_covers_pct": 3.3,
+      "intensive_720h_covers_pct": 35.6
+    },
+    {
+      "language": "Hungarian",
+      "category": "III",
+      "scenario": "fsi_class",
+      "need_hours": 1012.0,
+      "req_h_per_day_90d": 11.24,
+      "bootcamp_67_5h_covers_pct": 6.7,
+      "intensive_720h_covers_pct": 71.1
+    },
+    {
+      "language": "Hungarian",
+      "category": "III",
+      "scenario": "app_1.5x",
+      "need_hours": 1518.0,
+      "req_h_per_day_90d": 16.87,
+      "bootcamp_67_5h_covers_pct": 4.4,
+      "intensive_720h_covers_pct": 47.4
+    },
+    {
+      "language": "Hungarian",
+      "category": "III",
+      "scenario": "app_2x",
+      "need_hours": 2024.0,
+      "req_h_per_day_90d": 22.49,
+      "bootcamp_67_5h_covers_pct": 3.3,
+      "intensive_720h_covers_pct": 35.6
+    },
+    {
+      "language": "Turkish",
+      "category": "III",
+      "scenario": "fsi_class",
+      "need_hours": 1012.0,
+      "req_h_per_day_90d": 11.24,
+      "bootcamp_67_5h_covers_pct": 6.7,
+      "intensive_720h_covers_pct": 71.1
+    },
+    {
+      "language": "Turkish",
+      "category": "III",
+      "scenario": "app_1.5x",
+      "need_hours": 1518.0,
+      "req_h_per_day_90d": 16.87,
+      "bootcamp_67_5h_covers_pct": 4.4,
+      "intensive_720h_covers_pct": 47.4
+    },
+    {
+      "language": "Turkish",
+      "category": "III",
+      "scenario": "app_2x",
+      "need_hours": 2024.0,
+      "req_h_per_day_90d": 22.49,
+      "bootcamp_67_5h_covers_pct": 3.3,
+      "intensive_720h_covers_pct": 35.6
+    },
+    {
+      "language": "Czech",
+      "category": "III",
+      "scenario": "fsi_class",
+      "need_hours": 1012.0,
+      "req_h_per_day_90d": 11.24,
+      "bootcamp_67_5h_covers_pct": 6.7,
+      "intensive_720h_covers_pct": 71.1
+    },
+    {
+      "language": "Czech",
+      "category": "III",
+      "scenario": "app_1.5x",
+      "need_hours": 1518.0,
+      "req_h_per_day_90d": 16.87,
+      "bootcamp_67_5h_covers_pct": 4.4,
+      "intensive_720h_covers_pct": 47.4
+    },
+    {
+      "language": "Czech",
+      "category": "III",
+      "scenario": "app_2x",
+      "need_hours": 2024.0,
+      "req_h_per_day_90d": 22.49,
+      "bootcamp_67_5h_covers_pct": 3.3,
+      "intensive_720h_covers_pct": 35.6
+    },
+    {
+      "language": "Arabic",
+      "category": "IV",
+      "scenario": "fsi_class",
+      "need_hours": 2200.0,
+      "req_h_per_day_90d": 24.44,
+      "bootcamp_67_5h_covers_pct": 3.1,
+      "intensive_720h_covers_pct": 32.7
+    },
+    {
+      "language": "Arabic",
+      "category": "IV",
+      "scenario": "app_1.5x",
+      "need_hours": 3300.0,
+      "req_h_per_day_90d": 36.67,
+      "bootcamp_67_5h_covers_pct": 2.0,
+      "intensive_720h_covers_pct": 21.8
+    },
+    {
+      "language": "Arabic",
+      "category": "IV",
+      "scenario": "app_2x",
+      "need_hours": 4400.0,
+      "req_h_per_day_90d": 48.89,
+      "bootcamp_67_5h_covers_pct": 1.5,
+      "intensive_720h_covers_pct": 16.4
+    },
+    {
+      "language": "Mandarin",
+      "category": "IV",
+      "scenario": "fsi_class",
+      "need_hours": 2200.0,
+      "req_h_per_day_90d": 24.44,
+      "bootcamp_67_5h_covers_pct": 3.1,
+      "intensive_720h_covers_pct": 32.7
+    },
+    {
+      "language": "Mandarin",
+      "category": "IV",
+      "scenario": "app_1.5x",
+      "need_hours": 3300.0,
+      "req_h_per_day_90d": 36.67,
+      "bootcamp_67_5h_covers_pct": 2.0,
+      "intensive_720h_covers_pct": 21.8
+    },
+    {
+      "language": "Mandarin",
+      "category": "IV",
+      "scenario": "app_2x",
+      "need_hours": 4400.0,
+      "req_h_per_day_90d": 48.89,
+      "bootcamp_67_5h_covers_pct": 1.5,
+      "intensive_720h_covers_pct": 16.4
+    },
+    {
+      "language": "Cantonese",
+      "category": "IV",
+      "scenario": "fsi_class",
+      "need_hours": 2200.0,
+      "req_h_per_day_90d": 24.44,
+      "bootcamp_67_5h_covers_pct": 3.1,
+      "intensive_720h_covers_pct": 32.7
+    },
+    {
+      "language": "Cantonese",
+      "category": "IV",
+      "scenario": "app_1.5x",
+      "need_hours": 3300.0,
+      "req_h_per_day_90d": 36.67,
+      "bootcamp_67_5h_covers_pct": 2.0,
+      "intensive_720h_covers_pct": 21.8
+    },
+    {
+      "language": "Cantonese",
+      "category": "IV",
+      "scenario": "app_2x",
+      "need_hours": 4400.0,
+      "req_h_per_day_90d": 48.89,
+      "bootcamp_67_5h_covers_pct": 1.5,
+      "intensive_720h_covers_pct": 16.4
+    },
+    {
+      "language": "Japanese",
+      "category": "IV",
+      "scenario": "fsi_class",
+      "need_hours": 2200.0,
+      "req_h_per_day_90d": 24.44,
+      "bootcamp_67_5h_covers_pct": 3.1,
+      "intensive_720h_covers_pct": 32.7
+    },
+    {
+      "language": "Japanese",
+      "category": "IV",
+      "scenario": "app_1.5x",
+      "need_hours": 3300.0,
+      "req_h_per_day_90d": 36.67,
+      "bootcamp_67_5h_covers_pct": 2.0,
+      "intensive_720h_covers_pct": 21.8
+    },
+    {
+      "language": "Japanese",
+      "category": "IV",
+      "scenario": "app_2x",
+      "need_hours": 4400.0,
+      "req_h_per_day_90d": 48.89,
+      "bootcamp_67_5h_covers_pct": 1.5,
+      "intensive_720h_covers_pct": 16.4
+    },
+    {
+      "language": "Korean",
+      "category": "IV",
+      "scenario": "fsi_class",
+      "need_hours": 2200.0,
+      "req_h_per_day_90d": 24.44,
+      "bootcamp_67_5h_covers_pct": 3.1,
+      "intensive_720h_covers_pct": 32.7
+    },
+    {
+      "language": "Korean",
+      "category": "IV",
+      "scenario": "app_1.5x",
+      "need_hours": 3300.0,
+      "req_h_per_day_90d": 36.67,
+      "bootcamp_67_5h_covers_pct": 2.0,
+      "intensive_720h_covers_pct": 21.8
+    },
+    {
+      "language": "Korean",
+      "category": "IV",
+      "scenario": "app_2x",
+      "need_hours": 4400.0,
+      "req_h_per_day_90d": 48.89,
+      "bootcamp_67_5h_covers_pct": 1.5,
+      "intensive_720h_covers_pct": 16.4
+    }
+  ],
+  "verdict": "CONFIRMED deficit: Spanish needs 7.67h/d (class) or 11.5-15.33h/d app-adjusted for B2 in 90d; bootcamp 0.75h/d covers 9.8% (class) / 4.9-6.5% (app) of Spanish B2. Intensive 8h/d x 90d = 720h covers 104% of Spanish class hours but only 33% of Mandarin class hours (16-22% app-adjusted). Hence 'fluent in 3 months' is Hours-impossible at casual pace; only the redefined 15-min-conversation (A1-A2) target survives at 45min/d.",
+  "sources": [
+    "data/fsi_hours.csv",
+    "data/SOURCES.md"
+  ]
+}
