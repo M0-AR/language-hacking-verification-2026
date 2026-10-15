@@ -7,7 +7,7 @@
 ![Tests 7 passed](https://img.shields.io/badge/tests-7_passed-brightgreen.svg)
 ![Live verified](https://img.shields.io/badge/live--verified-2026--10--15-brightgreen.svg)
 
-**🌐 Live interactive version:** open [`preview.html`](preview.html) locally, or publish it free via GitHub Pages (`docs/index.html` + Settings → Pages → Deploy from a branch → `main` + `/docs`). Full publishing steps in [`preview.html#pages`](preview.html) and §10 below.
+**🌐 Live interactive version (click one — all three show the same page):** [Home `/`](https://m0-ar.github.io/language-hacking-verification-2026/) · [`/preview.html`](https://m0-ar.github.io/language-hacking-verification-2026/preview.html) · [`/docs/preview.html`](https://m0-ar.github.io/language-hacking-verification-2026/docs/preview.html). Local file: [`preview.html`](preview.html). How this works: §10.
 
 > **CEO summary (30 seconds):** a **15-minute conversation in 90 days is realistic** for a motivated beginner (A1–A2 level). **Full fluency (B2) in 90 days at 45 minutes a day is mathematically impossible** — you would need 8–32× more hours. At 8 hours a day it works for easy languages like Spanish, still not for hard ones like Japanese. Every number below **recomputes in one command** (`docker compose up --build`), and the interactive page teaches the method **from zero to professional with a 10-question quiz**.
 
@@ -246,12 +246,18 @@ Structure: `data/` (FSI CSV, mission/cognate CSVs, SOURCES.md) · `experiments/`
 
 ## 10. GitHub Pages — publish the interactive page
 
-The interactive site is a single static file — no build step, no secrets, works offline:
+The interactive site is a single static file — no build step, no secrets, works offline. Mirror files exist so the page renders **under either Pages source setting**:
 
-- Local preview: open [`preview.html`](preview.html) in any browser (quiz + calculator run locally).
-- Published copy: [`docs/index.html`](docs/index.html) — identical content, placed for branch deployment.
-- Publish (2 minutes): push to GitHub → **Settings → Pages** → Source **Deploy from a branch** → Branch **main**, Folder **`/docs`** → Save → wait 1–3 min → **Visit site** at `https://YOURNAME.github.io/language-hacking-verification-2026/`.
-- The `.nojekyll` file disables Jekyll so the GIF, quiz and calculator serve exactly as committed. To use a custom domain, add it under Settings → Pages → Custom domain.
+| Click | Works when source is `/docs` (recommended) | Works when source is `/` (root) |
+|---|---|---|
+| [Home `/`](https://m0-ar.github.io/language-hacking-verification-2026/) | ✅ (`docs/index.html`) | ✅ (root `index.html` redirects) |
+| [`/preview.html`](https://m0-ar.github.io/language-hacking-verification-2026/preview.html) | ✅ (`docs/preview.html`) | ✅ (root `preview.html`) |
+| [`/docs/preview.html`](https://m0-ar.github.io/language-hacking-verification-2026/docs/preview.html) | ❌ | ✅ (`docs/preview.html`) |
+
+- Files: root [`preview.html`](preview.html) + [`index.html`](index.html) (redirect with fallback links), [`docs/index.html`](docs/index.html) + [`docs/preview.html`](docs/preview.html) (identical, GIF path `demo.gif`), `docs/demo.gif`, `.nojekyll` at **both** root and `docs/`.
+- Publish (2 minutes): push → **Settings → Pages** → Source **Deploy from a branch** → Branch **main**, Folder **`/docs`** → Save → wait 1–3 min → **Visit site** at `https://m0-ar.github.io/language-hacking-verification-2026/`.
+- A green “Deployed” badge only proves *something* built — always click the three links above to confirm *your* paths resolve.
+- To use a custom domain, add it under Settings → Pages → Custom domain.
 
 ## References (abridged; full URLs + dates in `data/SOURCES.md`)
 
