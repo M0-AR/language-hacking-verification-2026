@@ -267,8 +267,7 @@ Belali & Khany (2026) 404-study meta (metacognitive d=0.52/sens. 1.32; cognitive
 
 ## ⭐ Star history
 
-<!-- Replace YOURNAME after pushing to GitHub; chart auto-updates daily, no maintenance. -->
-<!-- [![Star History Chart](https://api.star-history.com/svg?repos=YOURNAME/language-hacking-verification-2026&type=Date)](https://star-history.com/#YOURNAME/language-hacking-verification-2026&Date) -->
+[![Star History Chart](https://api.star-history.com/svg?repos=M0-AR/language-hacking-verification-2026&type=Date)](https://star-history.com/#M0-AR/language-hacking-verification-2026&Date)
 
 ## License
 
